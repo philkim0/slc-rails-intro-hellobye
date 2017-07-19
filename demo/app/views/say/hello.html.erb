@@ -1,0 +1,12 @@
+<h1>Hello from Rails!</h1>
+<p>It is now <%= @time %> </p>
+<p>In one hour it will be <%= @hour_from_now %></p>
+<p><%= "con" + "cat" %></p>
+<p><%= 6 * 12 %> is the answer to 6 x 12.</p>
+<p>These are all the files in this directory:</p>
+<ul>
+<% @files.each do |file| %>
+<li>file name is: <%= file %></li>
+<% end %>
+</ul>
+<p>Time to say <%= link_to "Goodbye", say_goodbye_path %>!</p>
